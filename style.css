@@ -66,9 +66,7 @@ body {
     border-bottom: 4px solid var(--verde);
 }
 
-
-
-
+.
 
 
 
@@ -87,4 +85,10 @@ body {
     .botao:last-child {
         border-radius: 0 40px 0 0;
     }
+}
+
+.aba-conteudo-titulo-secundario{
+    text-align: center;
+    color: var(--verde);
+    text-transform: uppercase;
 }
