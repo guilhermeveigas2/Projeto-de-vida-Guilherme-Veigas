@@ -8,8 +8,8 @@
     --verde: #ff000d;
     --branco: #FFFFFF;
     --botao-ativo: #1500ff;
-    --botao-inativo: rgba(0, 255, 13, 0.5);
-    --texto-fundo: rgba(0, 255, 115, 0.849);
+    --botao-inativo: rgba(86, 115, 243, 0.979);
+    --texto-fundo: rgba(174, 156, 255, 0.849);
 }
 
 body {
