@@ -32,20 +32,23 @@ function calculaTempo(tempoObjetivo) {
 
     segundos %= 60;
     minutos %= 60;
-    horas %= 60;
+    horas %= 24;
 
-    return (dias + " dias " + horas + " horas " + minutos + " minutos " + segundos + " segundos ");
-}
-
-function atualizaCronometro() {
-    for (let i = 0; i < contadores.length; i++) {
-        contadores[i].textContent = calculaTempo(tempos[i]);
+    if (tempoFinal > 0) {
+        return [dias, horas, minutos, segundos];
+    } else {
+        return [0, 0, 0, 0];
     }
 }
+    function atualizaCronometro() {
+        for (let i = 0; i < contadores.length; i++) {
+            contadores[i].textContent = calculaTempo(tempos[i]);
+        }
+    }
 
-function comecaCronometro() {
-    atualizaCronometro();
-    setInterval(atualizaCronometro, 1000);
-}
+    function comecaCronometro() {
+        atualizaCronometro();
+        setInterval(atualizaCronometro, 1000);
+    }
 
-comecaCronometro();
+    comecaCronometro();
